@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Custom design classes for the Vibrant Palette */
+.bg-vibrant-mesh {
+  background-color: #faf9ff;
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(244, 63, 94, 0.08) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 80%, rgba(245, 158, 11, 0.06) 0px, transparent 50%),
+    radial-gradient(at 80% 90%, rgba(16, 185, 129, 0.05) 0px, transparent 50%);
+}
+
+.text-gradient-vibrant {
+  background: linear-gradient(135deg, #4f46e5 0%, #ec4899 50%, #f43f5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-gradient-warm {
+  background: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-vibrant-primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 45%, #c026d3 100%);
+}
+
+.bg-gradient-vibrant-secondary {
+  background: linear-gradient(135deg, #ec4899 0%, #f43f5e 60%, #e11d48 100%);
+}
+
+.bg-gradient-vibrant-hover {
+  background: linear-gradient(135deg, #4338ca 0%, #6d28d9 45%, #a21caf 100%);
+}
+
+.bg-gradient-vibrant-warm {
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+}
+
+.bg-gradient-vibrant-dark {
+  background: linear-gradient(135deg, #1e1b4b 0%, #111827 100%);
+}
+
+.shadow-vibrant-sm {
+  box-shadow: 0 4px 20px -2px rgba(124, 58, 237, 0.06), 0 2px 8px -1px rgba(244, 63, 94, 0.03);
+}
+
+.shadow-vibrant {
+  box-shadow: 0 10px 30px -5px rgba(124, 58, 237, 0.1), 0 5px 15px -3px rgba(244, 63, 94, 0.06);
+}
+
+.shadow-vibrant-lg {
+  box-shadow: 0 20px 40px -8px rgba(124, 58, 237, 0.16), 0 10px 20px -5px rgba(244, 63, 94, 0.1);
+}
+
+.vibrant-badge-indigo {
+  background-color: rgba(99, 102, 241, 0.09);
+  color: #4f46e5;
+  border: 1px solid rgba(99, 102, 241, 0.18);
+}
+
+.vibrant-badge-fuchsia {
+  background-color: rgba(217, 70, 239, 0.09);
+  color: #bd21d3;
+  border: 1px solid rgba(217, 70, 239, 0.18);
+}
+
+.vibrant-badge-rose {
+  background-color: rgba(244, 63, 94, 0.09);
+  color: #e11d48;
+  border: 1px solid rgba(244, 63, 94, 0.18);
+}
+
+.vibrant-badge-emerald {
+  background-color: rgba(16, 185, 129, 0.09);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.18);
+}
+
+.vibrant-badge-amber {
+  background-color: rgba(245, 158, 11, 0.09);
+  color: #d97706;
+  border: 1px solid rgba(245, 158, 11, 0.18);
+}
+
+.vibrant-badge-sky {
+  background-color: rgba(14, 165, 233, 0.09);
+  color: #0284c7;
+  border: 1px solid rgba(14, 165, 233, 0.18);
+}
+
+.vibrant-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vibrant-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -8px rgba(124, 58, 237, 0.14), 0 8px 16px -4px rgba(244, 63, 94, 0.08);
+}
+
+.vibrant-ring {
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.3);
+}
+
+/* Base custom font usage styles */
+h1, h2, h3, .font-display {
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.03em;
+}
